@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,131 +7,107 @@
   <title>Document</title>
 
   <style>
-    body {
-      background-color: #b2b9b9;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap'); 
+    body{
+   background-color: #3B3B98 ;
+   font-family: 'Poppins', sans-serif;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
-
-    .nav-bar {
-      float: left;
-
-      background-color: royalblue;
-      width: 120px;
-      height: 200px;
-      border-radius: 3px;
-      text-align: left;
-      padding: 10px;
+    
+    .main-con{
+     box-shadow: 0px 0px 14px 1px #00000012;
+     
+      border: 1px solid #FFFFFF20;
+      width: 75%;
+      height: 35%;
+      border-radius: 5px;
+      padding: 15px;
       user-select: none;
-    }
-
-    .logo1 {
-      color: white;
-      font-weight: 800;
-      padding: 18px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #fff;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .navtxt a:hover {
-      font-size: 0.95em;
-    }
-
-    .navtxt a {
-      text-decoration: none;
-      color: white;
-      padding: 4px;
-      font-weight: 450;
-      font-size: 0.9em;
-    }
-
-    .navtxt {
       display: flex;
+     margin-top: 50%;
       flex-direction: column;
-      row-gap: 5px;
-      text-align: left;
-
+      
     }
-
-    .navcol {
-      margin-top: 15px;
-      margin-left: 8px;
-    }
-#show_hide_content {
- 
-  background-color: transparent;
-
+.namelg{
+  color: #FF9813;
+  font-size: 1.2em;
+  font-weight: bolder;
+  padding-bottom: 10px ;
 }
-#sh_toggle_button{
- 
-    padding: 2px;
-    border: 0;
-    background-color: transparent;
-    color: #000000B8;
-    font-weight: 900;
-    border-radius: 3px;
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    justify-content: center;
+.txt1{
+  font-size: 0.9em;
+  color: #FFFFFF;
 }
-.nav-main-bdy{
-  background-color: #4169E1;
-  width: 175px;
-  height: 50px;
-  border-radius: 2px;
-column-gap: 14px;
- display: flex;
- align-items: center ;
- overflow: hidden;
- user-select: none;
- justify-content: center;
- position: fixed;
+b{
+  font-weight: 600;
 }
-
-  </style>
- 
-</head>
-
-<body>
-  <div class="nav-main-bdy"><span style="font-size: 1.6em;font-weight: bold;font-family: 'Montserrat', sans-serif;color: #fff;font-family: 'Montserrat', sans-serif;">Aditya</span>
-<button type="button" id="sh_toggle_button" onclick="ShowHide()"><ion-icon name="menu" style="font-size: 2em;color: #fff;background-color: #3455B6;padding: 9px;"></ion-icon></button></div>
-
-<div id="show_hide_content" style="display:none">   <br>
-    <div class="nav-bar">
-      <span class="logo1">
-        Aditya67z
-      </span>
-      <br><br>
-      <div class="navcol">
-
-
-        <span class="navtxt">
-
-          <a href="">
-            <ion-icon name="home-outline"></ion-icon> Home
-          </a>
-
-          <a href="">
-            <ion-icon name="apps-outline"></ion-icon> Services
-          </a>
-
-          <a href="">
-            <ion-icon name="help-circle-outline"></ion-icon> About
-          </a>
-          <a href="">
-            <ion-icon name="call-outline"></ion-icon> Contact
-          </a>
-          <a href="">
-            <ion-icon name="arrow-undo-circle-outline"></ion-icon> Feedback
-          </a>
-        </span>
-      </div>
-    </div>
-    </div>
+a{
+  text-decoration: none;
+}
+.con-body{
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
+}
+.navb{
+  color:  #FFFFFFA8 ;
+  font-size: 2em;
+  margin-left: 30px ;
+  margin-top: -10px ;
+}
+.scb{
+  display: flex ;
+  align-items: center ;
+  justify-content: center ;
   
+}
+.scbi{
+  padding: 5px ;
+  margin: 5px;
+  transition: color 1s;
+  font-size: 2em;
+}
+.scbi:hover{
+font-size: 2.1em;
+}
+  </style>
+</head>
+<body>
+  <div class="con-body">
+  <div class="main-con">
+    <div class="intro-con">
+
+    <span class="namelg">Aditya Vishwakarma</span>
+
+<ion-icon name="menu-outline" class="navb"></ion-icon>
+
+   <br>
+    <span class="txt1">
+      A <b>Web Developer</b> And <b>Web Designer</b></span>
+  </div>
+  <br>
+  
+<div class="scb">
+  <ion-icon class="scbi" name="logo-youtube" style="color: #DA4141;"></ion-icon> 
+  <ion-icon class="scbi"  name="logo-whatsapp" style="color: #128C7E;"></ion-icon>
+  <ion-icon class="scbi"  name="logo-twitter" style="color: #1DA1F2;"></ion-icon>
+  <ion-icon class="scbi"  name="logo-instagram" style="color: hotpink;"></ion-icon>
+  <ion-icon class="scbi"  name="logo-facebook" style="color: #4267B2;"></ion-icon>
+  <ion-icon class="scbi"  name="logo-discord" style="color: #7289da;"></ion-icon>
+</div>
 
 
+
+
+
+           
+           
+           
+           
+           
+ 
+  </div>
 
 
 
@@ -146,20 +121,19 @@ column-gap: 14px;
 
 
 <script>
-  const ShowHide = () => {
-  let button = document.getElementById("sh_toggle_button");
-  let content = document.getElementById("show_hide_content");
-  if(button.innerText == "show"){
-    button.innerText = "hide";
-    content.style.display = "block";
-  }else{
-    button.innerText = "show";
-    content.style.display = "none";
-  }
+const ShowHide = () => {
+	let button = document.getElementById("sh_toggle_button");
+	let content = document.getElementById("show_hide_content");
+	if(button.innerText == "show"){
+		button.innerText = "hide";
+		content.style.display = "block";
+	}else{
+		button.innerText = "show";
+		content.style.display = "none";
+	}
 }
 </script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
