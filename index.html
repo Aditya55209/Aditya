@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <!-- <script>
+  <!--
+  <script>
   var p = "2222";
    var password = prompt('Enter Password');
   if(password ===p){
@@ -17,11 +18,17 @@
   alert('Wrong Password !    - Aditya(Owner) ')
  }
   </script> -->
-  <title>Aditya</title>
+  <title>Aditya Web</title>
   <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap'); 
     body{
    font-family: 'Poppins', sans-serif;
+   user-select: none ;
+   display :flex ;
+   align-items: center ;
+   justify-content: center ;
+   background-color: black;
+   min-height: 100vh;
     }
     .main-con{
      box-shadow: 0px 0px 15px 5px #00000012;
@@ -33,7 +40,6 @@
       padding: 15px;
       user-select: none;
       display: flex;
-     margin-top: 50%;
       flex-direction: column;
     }
 .namelg{
@@ -52,14 +58,6 @@ b{
 a{
   text-decoration: none;
 }
-.con-body{
-  width: 100%;
-  height: 100%;
-  display: flex ;
-  align-items: center ;
-  justify-content: center ;
-}
-
 .scb{
   display: flex ;
   align-items: center ;
@@ -71,173 +69,31 @@ a{
   transition: color 1s;
   font-size: 2em;
 }
-.ph{
-  color: white;
-  background-color: #000000;
-  padding: 5px;
-  border-radius: 3px;
-}
-.bgb{
-  background-color: #000000 ;
-  border: 1px solid #000000;
-  width: 200px ;
-  color: #000000 ;
-  height: 75px ;
-  padding: 10px ;
-  border-radius: 4px ;
-  position: fixed ;
-}
-.bgbc{
-  width: 30px ;
-  height: 30px;
-  border-radius: 50%;
-  border:0;
-  padding: 5px ;
-}
-.modal {
-  
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
-}
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-  border-radius: 4px ;
-  border: 0 ;
-  height: 200px ;
-}
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
- 
+
   </style>
 </head>
 <body>
-  
-
-<button id="myBtn" style="
-border:0;
-border-radius: 2px ;
-background-color: royalblue;
-font-weight: bold ;
-color: white ;
-padding: 6px 9px ;
-display: flex ;
-align-items: center ;
-position: fixed ;
-justify-content: center ;"><ion-icon name="settings-outline" style="font-size: 1.5em;margin: 1px;"></ion-icon><span style="font-size:1.1em;">Setting</button>
- 
-  <br>
-
-  <div class="con-body">
   <div class="main-con">
     <div class="intro-con">
-
     <span class="namelg">Aditya Vishwakarma</span>
    <br>
     <span class="txt1">
      <b>Web Developer</b> And <b>Web Designer</b></span>
   </div>
   <br>
-  
 <div class="scb">
-
 <a href="https://instagram.com/aditya67z?igshid=YmMyMTA2M2Y=">  <ion-icon class="scbi"  name="logo-instagram" style="color: #fff ;"></ion-icon></a>
 
 <a href="mailto:adityavishwakarma4a@gmail.com"><ion-icon name="mail-outline" class="scbi" style="color: #fff;"></ion-icon></a>
   <ion-icon class="scbi"  name="logo-discord" style="color: #fff;"></ion-icon>
 </div>
-
 <br>
-
     <p style="color: #fff;font-size: 0.8em ; ">Hello, My Name Is<b> Aditya</b>, I Am <b>13 </b>Years Old, I Am From <b>India</b> I’m interested in <b>Coding And Gaming, I’m currently learning <b>JavaScript, Phyton</b>.
 </p> <br>
-
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-        <div class="bgb"><span style="font-size: 1em;color: #fff ;">Select Background Color </span><br><br>
-  <input type="button" onclick="royalblue()" class="bgbc" style="background-color: royalblue;">
-  <input type="button" onclick="black()" class="bgbc" style="background-color: black;">
-  <input type="button" onclick="voi()" class="bgbc" style="background-color: blueviolet;">
-  <input type="button" onclick="gold()" class="bgbc" style="background-color: gold;">
-</div> 
-  </div>
-
-</div>
-
-  </div>
-
-
-
-<script>
-  // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
-<script>
-  function royalblue(){
-    document.bgColor="royalblue";
-  }
-  function black(){
-    document.bgColor="black";
-  }
-  function voi(){
-    document.bgColor="#980DFF";
-  }
-  function gold(){
-    document.bgColor="#FF480D";
-  }
-</script>
+<span>
+    </div>
+    
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 </html>
